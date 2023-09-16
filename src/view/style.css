@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background: #15191d;
+  --background-secondary: #212529;
+  --text-color: #6f6f6f;
+  --text-color-secondary: #7d092e;
+  --acent: #313b4b;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 5vh;
+  background-color: var(--background);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100vw;
+  height: 90vh;
+  background-color: var(--background-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculadora {
+  width: 99%;
+  height: 100%;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculadora .pantalla {
+  width: 100%;
+  height: 20%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+main .calculadora .pantalla .p-secundaria {
+  width: 99%;
+  height: 30%;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1rem;
+}
+
+main .calculadora .pantalla .p-principal {
+  width: 99%;
+  height: 70%;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3rem;
+}
+
+main .calculadora .teclado {
+  width: 100%;
+  height: 80%;
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculadora .teclado .comandos {
+  width: 100%;
+  height: 40%;
+  border: solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculadora .teclado .comandos .accion-primarios {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main .calculadora .teclado .comandos .accion-primarios div {
+  width: 15%;
+  height: 70%;
+  border-radius: 100px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--acent);
+}
+
+main .calculadora .teclado .numeros {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculadora .teclado .numeros .teclasNumeros {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .calculadora .teclado .numeros .teclasNumeros .fila {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .calculadora .teclado .numeros .teclasNumeros .fila div {
+  width: 33.33%;
+  height: 70px;
+  border-radius: 5px;
+  margin: 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--acent);
+}
+
+main .calculadora .teclado .numeros .teclasOperaciones {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .calculadora .teclado .numeros .teclasOperaciones div {
+  width: 95%;
+  height: 60px;
+  border-radius: 5px;
+    margin: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--acent);
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

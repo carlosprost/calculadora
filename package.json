@@ -1,0 +1,28 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "aplicación de calculadora",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosprost/calculadora.git"
+  },
+  "keywords": [
+    "calculadora"
+  ],
+  "author": "Carlos Alberto Prost",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosprost/calculadora/issues"
+  },
+  "homepage": "https://github.com/carlosprost/calculadora#readme",
+  "dependencies": {
+    "electron": "^26.2.1"
+  },
+  "devDependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
