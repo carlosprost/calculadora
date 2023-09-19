@@ -19,44 +19,101 @@
         </section>
         <section class="teclado">
           <section class="comandos">
-            <section class="accion-primarios">
-              <div><span style="color: #7d092e">shift</span></div>
-              <div>CE</div>
-              <div>C</div>
-              <div>back</div>
-            </section>
-            <section class="accion-secundarios"></section>
+            <div class="sep">
+              <div id="shift" style="color: #94045a">shift</div>
+              <div id="alpha" style="color: #c49206">alpha</div>
+            </div>
+            <div class="sep">
+              <div id="modo">modo</div>
+              <div id="base">base</div>
+            </div>
           </section>
-          <section class="numeros">
-            <section class="teclasNumeros">
-              <div class="fila">
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
+
+          <section class="operaciones-especiales">
+            <div class="fila-especiales">
+              <div class="btn-especiales">X-1</div>
+              <div class="btn-especiales">%</div>
+              <div class="btn-especiales transparentes"></div>
+              <div class="btn-especiales transparentes"></div>
+              <div class="btn-especiales">Pol()</div>
+              <div class="btn-especiales">X3</div>
+            </div>
+            <div class="fila-especiales">
+              <div class="btn-especiales">a b/c</div>
+              <div class="btn-especiales">raiz</div>
+              <div class="btn-especiales">^</div>
+              <div class="btn-especiales">pot</div>
+              <div class="btn-especiales">Log</div>
+              <div class="btn-especiales">In</div>
+            </div>
+            <div class="fila-especiales">
+              <div class="btn-especiales">(-)</div>
+              <div class="btn-especiales">'''</div>
+              <div class="btn-especiales">hyp</div>
+              <div class="btn-especiales">Sin</div>
+              <div class="btn-especiales">Cos</div>
+              <div class="btn-especiales">Tan</div>
+            </div>
+            <div class="fila-especiales">
+              <div class="btn-especiales">RCL</div>
+              <div class="btn-especiales">ENG</div>
+              <div class="btn-especiales">(</div>
+              <div class="btn-especiales">)</div>
+              <div class="btn-especiales">,</div>
+              <div class="btn-especiales">M+</div>
+            </div>
+          </section>
+          <section class="basicos">
+            <div class="numeros">
+              <div class="fila-numeros">
+                <div class="btn-numeros">7</div>
+                <div class="btn-numeros">8</div>
+                <div class="btn-numeros">9</div>
               </div>
-              <div class="fila">
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
+              <div class="fila-numeros">
+                <div class="btn-numeros">4</div>
+                <div class="btn-numeros">5</div>
+                <div class="btn-numeros">6</div>
               </div>
-              <div class="fila">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+              <div class="fila-numeros">
+                <div class="btn-numeros">1</div>
+                <div class="btn-numeros">2</div>
+                <div class="btn-numeros">3</div>
               </div>
-              <div class="fila">
-                <div>±</div>
-                <div>0</div>
-                <div>.</div>
+              <div class="fila-numeros">
+                <div class="btn-numeros">+/-</div>
+                <div class="btn-numeros">0</div>
+                <div class="btn-numeros">.</div>
               </div>
-            </section>
-            <section class="teclasOperaciones">
-              <div>/</div>
-              <div>*</div>
-              <div>-</div>
-              <div>+</div>
-              <div>=</div>
-            </section>
+            </div>
+            <div class="operaciones-basicas">
+              <div class="fila-operaciones-basicas">
+                <div class="btn-operaciones-basicas">DEL</div>
+                <div class="btn-operaciones-basicas">AC</div>
+              </div>
+              <div class="fila-operaciones-basicas">
+                <div class="btn-operaciones-basicas">X</div>
+                <div class="btn-operaciones-basicas">/</div>
+              </div>
+              <div class="fila-operaciones-basicas">
+                <div class="btn-operaciones-basicas">+</div>
+                <div class="btn-operaciones-basicas">-</div>
+              </div>
+              <div class="fila-operaciones-basicas">
+                <div class="btn-operaciones-basicas">ANS</div>
+                <div
+                  id="igual"
+                  class="btn-operaciones-basicas"
+                  style="
+                    background-color: #c49206;
+                    color: #94045a;
+                    font-size: 2rem;
+                  "
+                >
+                  =
+                </div>
+              </div>
+            </div>
           </section>
         </section>
       </section>
