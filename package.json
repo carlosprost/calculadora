@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/carlosprost/calculadora#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.11.1",
     "electron": "^26.2.1"
   },
   "devDependencies": {

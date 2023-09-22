@@ -59,24 +59,96 @@ main .calculadora .pantalla {
   color: white;
 }
 
+main .calculadora .pantalla .p-terciaria {
+  width: 99%;
+  height: 10%;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.6rem;
+  user-select: none;
+}
+
+main .calculadora .pantalla .p-terciaria .shift-alpha-view {
+  width: 40px;
+  height: 100%;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .calculadora .pantalla .p-terciaria .shift-alpha-view div {
+  width: 10px;
+  height: 100%;
+  background-color: white;
+  color: var(--text-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+main .calculadora .pantalla .p-terciaria .shift-alpha-view .transparente {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+}
+
+main .calculadora .pantalla .p-terciaria .base-view {
+  width: 60px;
+  height: 100%;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .calculadora .pantalla .p-terciaria .base-view div {
+  width: 10px;
+  height: 100%;
+  background-color: white;
+  color: var(--text-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+main .calculadora .pantalla .p-terciaria .base-view .transparente {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+}
+
 main .calculadora .pantalla .p-secundaria {
   width: 99%;
-  height: 30%;
+  height: 25%;
   padding: 0 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1rem;
+  user-select: none;
 }
 
 main .calculadora .pantalla .p-principal {
   width: 99%;
-  height: 70%;
+  height: 65%;
   padding: 0 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 3rem;
+  user-select: none;
 }
 
 main .calculadora .teclado {
@@ -119,6 +191,12 @@ main .calculadora .teclado .comandos .sep div {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
+}
+
+main .calculadora .teclado .comandos .sep div:active {
+  background-color: var(--accent);
+  color: white;
 }
 
 main .calculadora .teclado .operaciones-especiales {

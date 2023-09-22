@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Calculadora</title>
   </head>
@@ -14,11 +18,45 @@
     <main>
       <section class="calculadora">
         <section class="pantalla">
+          <section class="p-terciaria">
+            <div style="display: none">
+              <input
+                type="checkbox"
+                name="D"
+                class="check_base"
+                id="decimal"
+                checked
+              />
+              <input type="checkbox" name="B" class="check_base" id="binario" />
+              <input
+                type="checkbox"
+                name="H"
+                class="check_base"
+                id="hexadecimal"
+              />
+              <input type="checkbox" name="O" class="check_base" id="octal" />
+            </div>
+            <div class="shift-alpha-view">
+              <div class="s transparente">S</div>
+              <div class="a transparente">A</div>
+            </div>
+            <div class="base-view">
+              <div class="selector_base" id="D">D</div>
+              <div class="selector_base transparente" id="B">B</div>
+              <div class="selector_base transparente" id="H">H</div>
+              <div class="selector_base transparente" id="O">O</div>
+            </div>
+          </section>
           <section class="p-secundaria">0</section>
           <section class="p-principal">0</section>
         </section>
         <section class="teclado">
           <section class="comandos">
+            <div class="sep" style="display: none">
+              <input type="checkbox" name="check_shift" id="check_shift" />
+              <input type="checkbox" name="check_alpha" id="check_alpha" />
+              <input type="checkbox" name="check_modo" id="check_modo" />
+            </div>
             <div class="sep">
               <div id="shift" style="color: #94045a">shift</div>
               <div id="alpha" style="color: #c49206">alpha</div>
@@ -40,7 +78,7 @@
             </div>
             <div class="fila-especiales">
               <div class="btn-especiales">a b/c</div>
-              <div class="btn-especiales">raiz</div>
+              <div class="btn-especiales">raíz</div>
               <div class="btn-especiales">^</div>
               <div class="btn-especiales">pot</div>
               <div class="btn-especiales">Log</div>
@@ -92,7 +130,7 @@
                 <div class="btn-operaciones-basicas">AC</div>
               </div>
               <div class="fila-operaciones-basicas">
-                <div class="btn-operaciones-basicas">X</div>
+                <div class="btn-operaciones-basicas">*</div>
                 <div class="btn-operaciones-basicas">/</div>
               </div>
               <div class="fila-operaciones-basicas">
